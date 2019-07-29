@@ -23,7 +23,7 @@
                         <a class="nav-link" href="../../view/home/berita.php">Berita</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link text-white bg-info animated infinite bounce" href="../../view/home/pengumuman.php">Pengumuman PSB</a>
+                        <a class="nav-link text-white bg-info animated bounce" href="../../view/home/pengumuman.php">Pengumuman PSB</a>
                     </li>
                     <li class="nav-item p-2">
                         <div class="dropdown">

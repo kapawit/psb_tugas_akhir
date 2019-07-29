@@ -8,7 +8,7 @@ include("../template/navbar.php");
         <!-- Start Container -->
         <div class="container pt-4">
             <!-- Start Form -->
-            <form action="../controller/insert.php" method="post">
+            <form action="../../controller/insert.php" method="post">
                 <h2 class="text-center">Formulir Pendaftaran Siswa</h2>
                 <div class="container pt-2 pb-2">
                     <div class="form-group row">

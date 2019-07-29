@@ -40,6 +40,10 @@
                                             <option value="admin">Admin</option>
                                         </select>
                                     </div>
+                                    <div class="alert alert-info">
+                                        <p class="m-0">siswa@gmail.com | siswa</p>
+                                        <p class="m-0">admin@gmail.com | admin</p>
+                                    </div>
                                 </div>
                                 <input class="btn btn-primary btn-block" type="submit" value="Login" name="login" id="login">
                             </div>
