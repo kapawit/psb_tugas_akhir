@@ -4,7 +4,7 @@ include("../template/navbar.php");
 ?>
 <?php
 include("../../database/koneksi.php");
-$query_data = mysqli_query($koneksi, "SELECT * from siswa WHERE status_daftar='1' ORDER BY `nilai_un` DESC");
+$query_data = mysqli_query($koneksi, "SELECT * from siswa WHERE status_daftar='Diterima' ORDER BY `nilai_un` DESC");
 ?>
 <main role="main">
     <img src="../../assets/img/bg-sekolah.jpg" alt="bg sekolah" width="100%">
@@ -16,11 +16,11 @@ $query_data = mysqli_query($koneksi, "SELECT * from siswa WHERE status_daftar='1
                 <th width="15%">Nama</th>
                 <th width="10%">Tanggal Lahir</th>
                 <th width="5%">Jenis Kelamin</th>
-                <th width="10%">No Telpon</th>
                 <th width="10%">Email</th>
                 <th width="15%">Alamat</th>
                 <th width="10%">Nilai Un</th>
                 <th width="10%">Asal Sekolah</th>
+                <th width="10%">Status Daftar</th>
             </thead>
             <tbody>
                 <?php
@@ -32,11 +32,11 @@ $query_data = mysqli_query($koneksi, "SELECT * from siswa WHERE status_daftar='1
                         <td><?= $row['nama_siswa']; ?></td>
                         <td><?= $row['tgl_lahir']; ?></td>
                         <td><?= $row['jk']; ?></td>
-                        <td><?= $row['no_telfon']; ?></td>
                         <td><?= $row['email']; ?></td>
                         <td><?= $row['alamat']; ?></td>
                         <td><?= $row['nilai_un']; ?></td>
                         <td><?= $row['asal_sekolah']; ?></td>
+                        <td><span class="badge badge-success"><?= $row['status_daftar']; ?></span></td>
                     </tr>
                 <?php
                 }

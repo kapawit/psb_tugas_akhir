@@ -13,6 +13,7 @@ if (isset($_POST['username']) && ($_POST['password'])) {
     if ($cek > 0) {
         if ($role == 'siswa') {
             $_SESSION['role'] = 'siswa';
+            $_SESSION['status_daftar'] = $data['status_daftar'];
             $_SESSION['nama_siswa'] = $data['nama_siswa'];
             $_SESSION['id_siswa'] = $data['id_pendaftaran'];
             header("location:../../view/siswa/dashboard.php?pesan=sukses");

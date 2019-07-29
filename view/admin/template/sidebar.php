@@ -11,6 +11,7 @@
             </div>
             <div class="pull-left info">
                 <h4><?= $_SESSION['nama_admin']; ?></h4>
+                <i class="fa fa-circle text-danger"></i> <?= $_SESSION['role']; ?>
             </div>
         </div>
         <!-- /.search form -->

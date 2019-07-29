@@ -41,12 +41,12 @@ $query_data = mysqli_query($koneksi, "SELECT * from siswa ORDER BY `nilai_un` DE
                         <td><?= $row['nilai_un']; ?></td>
                         <td><?= $row['asal_sekolah']; ?></td>
                         <td>
-                            <?php if ($row['status_daftar'] == '0') {
+                            <?php if ($row['status_daftar'] == 'pending') {
                                 ?>
                                 <a class="btn btn-success " href="../../controller/admin/verifikasi.php?id_siswa=<?= $row['id_pendaftaran']; ?>">Verifikasi</a>
                             <?php
                             } else { ?>
-                                <a class="btn btn-success" disabled href="#">Verified</a>
+                                <a class="btn btn-success" disabled href="#">Diterima</a>
                             <?php } ?>
                         </td>
                     </tr>

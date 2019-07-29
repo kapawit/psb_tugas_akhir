@@ -40,10 +40,6 @@
                                             <option value="admin">Admin</option>
                                         </select>
                                     </div>
-                                    <div class="alert alert-info">
-                                        <p class="m-0">siswa@gmail.com | siswa</p>
-                                        <p class="m-0">admin@gmail.com | admin</p>
-                                    </div>
                                 </div>
                                 <input class="btn btn-primary btn-block" type="submit" value="Login" name="login" id="login">
                             </div>
@@ -56,16 +52,20 @@
                                         <a class="btn btn-outline-info btn-block" href="daftar.php">Daftar</a>
                                     </div>
                                 </div>
+                            </div>
                         </form>
+                        <div class="alert alert-info">
+                            <p class="m-0">Akun siswa : siswa@gmail.com | siswa</p>
+                            <p class="m-0">Akun Admin : admin@gmail.com | admin</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Konten -->
-    <script src="../../assets/js/jquery.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/popper.js"></script>
+        <!-- End Konten -->
+        <script src="../../assets/js/jquery.js"></script>
+        <script src="../../assets/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/popper.js"></script>
 </body>
 
 </html>

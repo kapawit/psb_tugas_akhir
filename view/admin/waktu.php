@@ -53,11 +53,11 @@ include("template/sidebar.php");
                 $days    = (int) ((mktime(0, 0, 0, $bulan, $tanggal, $tahun) - time()) / 86400);
                 if ($days >= 1) {
                     ?>
-                    <div class="bg-primary" style="padding:20px;">
-                        <h3><?php echo $diff->d; ?>Hari</h3>
-                        <h3><?php echo $diff->h; ?>Jam</h3>
-                        <h3><?php echo $diff->i; ?>Menit</h3>
-                        <h3><?php echo $diff->s; ?>Detik</h3>
+                    <div class="callout callout-info">
+                        <div class="bg-light border border-primary" style="padding:20px;">
+                            <h2 class="text-center">Pendaftaran Ditutup Dalam Waktu : </h2>
+                            <h3 class="text-center"><?php echo $diff->d; ?> Hari <?php echo $diff->h; ?> Jam <?php echo $diff->i; ?> Menit <?php echo $diff->s; ?> Detik</h3>
+                        </div>
                     </div>
                 <?php
                 } else {

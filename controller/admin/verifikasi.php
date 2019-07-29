@@ -1,6 +1,6 @@
 <?php
 include("../../database/koneksi.php");
-$status = 1;
+$status = 'Diterima';
 $id = $_GET['id_siswa'];
 $query_status = "UPDATE `siswa` SET `status_daftar`='$status' WHERE id_pendaftaran='$id'";
 
