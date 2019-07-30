@@ -40,7 +40,7 @@
                             </button>
                             <div class="dropdown-menu">
                                 <?php if (isset($_SESSION['role'])) {
-                                    echo '<a class="dropdown-item pl-3 pr-3" href="../controller/auth/logout.php">Logout</a>';
+                                    echo '<a class="dropdown-item pl-3 pr-3" href="../../controller/auth/logout.php">Logout</a>';
                                 } else {
                                     echo '<a class="dropdown-item pl-3 pr-3" href="../home/login.php">Masuk</a>';
                                     echo '<a class="dropdown-item pl-3 pr-3" href="../home/daftar.php">Daftar</a>';
@@ -48,20 +48,19 @@
                             </div>
                         </div>
                     </li>
-
                 </ul>
             </div>
             <?php
             if (isset($_SESSION['role'])) {
                 if (($_SESSION['role']) == 'siswa') { ?>
-                    <a class="nav-link btn btn-outline-success" href="../siswa/dashboard.php" data-toggle="tooltip" data-placement="right" title="Ke Dashboard Siswa">
+                    <button class="nav-link btn btn-outline-success" href="../siswa/dashboard.php" data-toggle="tooltip" data-placement="right" title="Ke Dashboard Siswa">
                         <i class="fa fa-arrow-right"></i>
-                    </a>
+                    </button>
                 <?php
                 } elseif (($_SESSION['role']) == 'admin') { ?>
-                    <a class="nav-link btn btn-outline-success" href="../admin/dashboard.php" data-toggle="tooltip" data-placement="right" title="Ke Halaman Admin">
+                    <button class="nav-link btn btn-outline-success" href="../admin/dashboard.php" data-toggle="tooltip" data-placement="right" title="Ke Halaman Admin">
                         <i class="fa fa-arrow-right"></i>
-                    </a>
+                    </button>
                 <?php
                 }
             }
